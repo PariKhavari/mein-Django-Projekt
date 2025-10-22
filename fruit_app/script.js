@@ -11,6 +11,7 @@ async function fetchData() {
     renderList();
 }
 
+
 function renderList() {
     console.log(fruits);
     let content = document.getElementById('content');
