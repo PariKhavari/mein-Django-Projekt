@@ -7,6 +7,11 @@ from .fruits_data import fruits
 
 
 def send_fruites(request):
-    for fruit in fruits:
-        result = fruit
-    return JsonResponse(result)
+    fruits = [
+        {"name": "Apple",  "weight": 200, "color": "red"},
+        {"name": "Banana", "weight": 120, "color": "yellow"},
+        {"name": "Grape",  "weight": 5,   "color": "purple"},
+        {"name": "Pear",   "weight": 220, "color": "green"},
+        {"name": "Orange", "weight": 250, "color": "orange"},
+    ]
+    return JsonResponse(fruits, safe=False)
