@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from fruit_app.views import send_fruites
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('fruits/', send_fruites)
+
 ]
